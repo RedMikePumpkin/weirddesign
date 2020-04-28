@@ -1,7 +1,74 @@
 folded:
-screen: 1:2 7cm * 14cm = 98cm^2 = 15.65cm
-size: 7.2cm * 14.6cm
+screen: 1:2 8cm * 16cm = 98cm^2 = 15.65cm
+size: 8.2cm * 16.6cm
+res: 1458x2880 (cropped to 1440x2880)
+virtual bezel-l: 0mm
+virtual bezel-r: 1mm
 
 unfolded:
-screen: 3:2 21cm * 14cm = 29cm^2 = 25.24cm
-size: 21.6cm * 14.6cm
+screen: 3:2 24cm * 16cm = 29cm^2 = 25.24cm
+subscreen 1: 1:2 8cm * 16cm = 98cm^2 = 15.65cm
+subscreen 2: 18:35 8.2cm * 16cm = 100.8cm^2 = 15.74cm
+subscreen 3: 17:35 8cm * 16cm = 98cm^2 = 15.65cm
+bezel-t: 5mm
+bezel-b: 2mm
+bezel-l 1: 2mm
+bezel-r 1: 0mm
+bezel-l 2: 0mm
+bezel-r 2: 0mm
+bezel-l 3: 0mm
+bezel-r 3: 3mm
+total bezel-l: 1mm
+total bezel-r: 2mm
+virtual bezel-l: 2mm
+virtual bezel-r: 1mm
+size: 24.6cm * 16.6cm
+res: 4374x2880 (cropped to 4320x2880)
+
+cameras:
+1 2 3 4
+ + + +
+5 6 7
+1. LiDaR camera 32MP
+2. wide 128MP (max zoom 4x)
+3. ultrawide 1/4x 128MP (max zoom 1x)
+4. IR wide 32MP (max zoom 2x)
+5. telephoto 16x 128MP (max zoom 64x)
+6. telephoto 4x 128MP (max zoom 16x)
+7. macro 128MP
+lights/pins:
+1. 8x white led
+2. nc mic
+3. 8x ir led
+
+camera model:
+photo/portrait:
+- 1/4 <= x < 1 : ultrawide
+- 1   <= x < 4 : wide
+- 4   <= x < 16: telephoto 4x
+- 16  <= x < 64: telephoto 16x
+wide exposure:
+- IR wide for luma in low light
+- wide for chroma and luma in high light
+- stored in H/S/V1/V2
+- 1-2x zoom
+night vision:
+- IR wide for luma
+- constant chroma
+- 1-2x zoom
+
+IO:
+- miniAUX connector on top-left of screen 1
+- USB C ThunderBolt 3 on top-center of screen 2
+- power btn on top-right of screen 3
+- 5 volume buttons on right-top of screen 3
+  - volume+
+  - volume-
+  - mute
+  - next source
+  - prev source
+
+Dongles:
+- USB C TB3 male to
+  - USB C female TB3 x2
+  - USB A female 3.2 x2
