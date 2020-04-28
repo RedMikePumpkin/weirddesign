@@ -1,0 +1,7 @@
+folded:
+screen: 1:2 7cm * 14cm = 98cm^2 = 15.65cm
+size: 7.2cm * 14.6cm
+
+unfolded:
+screen: 3:2 21cm * 14cm = 29cm^2 = 25.24cm
+size: 21.6cm * 14.6cm
