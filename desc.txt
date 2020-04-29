@@ -19,9 +19,9 @@ bezel-r 2: 0mm
 bezel-l 3: 0mm
 bezel-r 3: 3mm
 total bezel-l: 1mm
-total bezel-r: 2mm
+total bezel-r: 3mm
 virtual bezel-l: 2mm
-virtual bezel-r: 1mm
+virtual bezel-r: 0mm
 size: 24.6cm * 16.6cm
 res: 4374x2880 (cropped to 4320x2880)
 
